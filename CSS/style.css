@@ -1,0 +1,86 @@
+html,body {
+	background: url(https://images.pexels.com/photos/957061/milky-way-starry-sky-night-sky-star-957061.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+	background-size: 100%;
+	overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.premice {
+	text-align: left;
+	width: 75%;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-name: premice;
+    animation-timing-function: ease-out;
+    font-size: 65px;
+    color: #4bd5ee;
+    opacity: 0;
+}
+@keyframes premice {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+.defilement {
+    color: #ffff66;    
+    font-size: 105px;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: bold;
+    text-align: justify;
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(20deg);
+    position: absolute;
+    top: 20%;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    left: 29%;
+    width: 1600px;
+    margin: 0 0 0 -400px;
+}
+
+h1{
+	text-align: center;
+	font-size: 200px;
+	margin-bottom: 500px;
+}
+
+.defilement > div {
+	animation-delay: 3s;
+    animation-duration: 350s;
+    animation-name: defilement;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 100%;
+}
+@keyframes defilement {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: -500%;
+        opacity: 0;
+    }
+}
